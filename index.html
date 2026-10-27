@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080817">
+  <meta name="description" content="Phantom AI — a spooky terminal with optional private, local AI.">
+  <title>Phantom AI | Ghost in the Machine</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+
+  <header class="hero">
+    <div class="moon" aria-hidden="true">🌕</div>
+    <div class="ghost" aria-hidden="true">👻</div>
+    <p class="eyebrow">HACKTOBERFEST · WEEK 4</p>
+    <h1>Phantom <span>AI</span></h1>
+    <p class="subtitle">A ghost in the machine. A story in the shadows.</p>
+    <p class="description">
+      Enter the haunted terminal and discover what the spirits have to say.
+    </p>
+    <a href="#terminal" class="start-btn">Enter the Unknown ↓</a>
+  </header>
+
+  <main>
+    <section class="terminal-card" id="terminal">
+      <div class="terminal-top">
+        <div class="window-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <span class="terminal-title">PHANTOM TERMINAL</span>
+        <span class="status"><i></i> <span id="mode">OFFLINE MODE</span></span>
+      </div>
+
+      <div id="output" class="output" aria-live="polite">
+        <p class="system">[SYSTEM] Connection established...</p>
+        <p class="system">[SYSTEM] The spirits are waiting.</p>
+        <p class="ghost-line">👻 Welcome, traveler. Type <b>help</b> to begin.</p>
+      </div>
+
+      <form id="command-form" class="command-form">
+        <label for="command" class="prompt">visitor@phantom:~$</label>
+        <input
+          id="command"
+          type="text"
+          placeholder="Ask the spirits something..."
+          autocomplete="off"
+          maxlength="500"
+          required
+        >
+        <button type="submit" id="send">Summon</button>
+      </form>
+
+      <div class="terminal-actions">
+        <button class="small-btn" id="clear">Clear terminal</button>
+        <button class="small-btn" id="ai-toggle">Enable local AI</button>
+      </div>
+      <p id="notice" class="notice">
+        Offline story mode is active. No API key required.
+      </p>
+    </section>
+
+    <section class="features">
+      <article class="feature">
+        <span class="feature-icon">🕯️</span>
+        <h2>Summon a Story</h2>
+        <p>Discover spooky stories, mysterious commands and strange messages.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon">🔒</span>
+        <h2>Privacy First</h2>
+        <p>Offline mode keeps your prompts in this browser session.</p>
+      </article>
+      <article class="feature">
+        <span class="feature-icon">🧠</span>
+        <h2>Open AI</h2>
+        <p>Optionally connect a locally running open-weight model through Ollama.</p>
+      </article>
+    </section>
+
+    <section class="about">
+      <p class="eyebrow">BEYOND THE CLOSED BOX</p>
+      <h2>Why Open Innovation Matters</h2>
+      <p>
+        Phantom AI explores how open technologies give developers control
+        over their tools. A local open-weight model can generate stories
+        without sending prompts to a third-party AI service.
+      </p>
+      <div class="pill-row">
+        <span>Open technologies</span>
+        <span>Local inference</span>
+        <span>Privacy</span>
+        <span>Model choice</span>
+      </div>
+      <p class="disclaimer">
+        Offline story mode uses predefined responses, not an AI model.
+        Actual AI generation requires a locally installed model.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made in the shadows 👻 with HTML, CSS & JavaScript</p>
+    <p>Open source · Your machine · Your rules</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
